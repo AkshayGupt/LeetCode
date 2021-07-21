@@ -8,7 +8,7 @@ class Solution {
         int total =(int)Math.pow(2,n);
         while(cnt<total){
             int toXor = 1<<digits;
-            int j=cnt-1;
+            int j=cnt-1;    
             for(;j>=0;j--){
                 int temp =ans.get(j) ^ toXor;
                 ans.add(temp);
